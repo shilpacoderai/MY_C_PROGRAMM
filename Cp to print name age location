@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    printf("shilpa\n");
+    printf("18\n");
+    printf("karnaataka\n");
+
+    return 0;
+}
