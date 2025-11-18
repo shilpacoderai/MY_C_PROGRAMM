@@ -1,0 +1,9 @@
+#include <stdio.h>
+int jaiballaya() {
+printf("shammu\n");
+printf("shilpa\n");
+}
+
+int main() {
+    jaiballaya();
+}
