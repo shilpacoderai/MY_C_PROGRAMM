@@ -11,6 +11,7 @@ len=strlen(str);
 for(i=0;i<len;i++){
     rev[i]=str[len-1-i];
 }
+rev[len]=rev[len]/10;
 if(strcmp(str,rev)==0){
     printf("it is a palindrome ");
 }
