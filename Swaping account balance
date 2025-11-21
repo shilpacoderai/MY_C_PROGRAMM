@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+void swap(float *x, float *y) {
+    float temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int main() {
+    float bal1, bal2;
+
+    printf("Enter first account balance: ");
+    scanf("%f", &bal1);
+
+    printf("Enter second account balance: ");
+    scanf("%f", &bal2);
+
+    printf("\nBefore swapping:\n");
+    printf("Bal 1 = %.2f\n", bal1);
+    printf("Bale 2 = %.2f\n", bal2);
+
+    // calling swap function
+    swap(&bal1, &bal2);
+
+    printf("\nAfter swapping:\n");
+    printf("Bal 1 = %.2f\n", bal1);
+    printf("Bal 2 = %.2f\n", bal2);
+
+    return 0;
+}
