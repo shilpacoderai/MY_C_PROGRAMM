@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main() {
+    int choice, id;
+
+    
+    int PAN = 12345;
+    int AADHAR = 67890;
+    int APAAR = 11223;
+    int DRIVING = 44556;
+    int PASSPORT = 77889;
+
+    printf("Select ID Type to Verify:\n");
+    printf("1. PAN Number\n");
+    printf("2. AADHAR Number\n");
+    printf("3. APAAR ID\n");
+    printf("4. Driving License\n");
+    printf("5. Passport\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    printf("Enter ID Number: ");
+    scanf("%d", &id);
+
+    switch(choice) {
+        case 1:
+            if(id == PAN)
+                printf("Verified: PAN Number matched.\n");
+            else
+                printf("Not Verified: PAN Number not found.\n");
+            break;
+
+        case 2:
+            if(id == AADHAR)
+                printf("Verified: AADHAR Number matched.\n");
+            else
+                printf("Not Verified: AADHAR Number not found.\n");
+            break;
+
+        case 3:
+            if(id == APAAR)
+                printf("Verified: APAAR ID matched.\n");
+            else
+                printf("Not Verified: APAAR ID not found.\n");
+            break;
+
+        case 4:
+            if(id == DRIVING)
+                printf("Verified: Driving License matched.\n");
+            else
+                printf("Not Verified: Driving License not found.\n");
+            break;
+
+        case 5:
+            if(id == PASSPORT)
+                printf("Verified: Passport matched.\n");
+            else
+                printf("Not Verified: Passport not found.\n");
+            break;
+
+        default:
+            printf("Invalid choice\n");
+    }
+
+    return 0;
+}
