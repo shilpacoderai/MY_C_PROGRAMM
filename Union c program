@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+   union shilpa {
+       int age;
+       float mark;
+       
+   };
+   union shilpa sh;
+    sh.age=10;
+    printf("%d\n", sh.age);
+    sh.mark=10.7;
+    printf("%f", sh.mark);
+   
+}
