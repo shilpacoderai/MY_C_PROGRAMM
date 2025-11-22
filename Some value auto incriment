@@ -1,0 +1,13 @@
+#include <stdio.h>
+enum numbers {
+a=1,
+b,
+c=8,
+d,
+};
+int main(){
+    enum numbers s=d;
+    printf("d = %d", s);
+    
+}
+ 
